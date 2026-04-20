@@ -1,0 +1,32 @@
+views:
+  - type: table
+    name: Table Mnemonics
+    filters:
+      and:
+        - file.folder == "docs/cybersecurity/fundamentos/1-Riesgos-Vulnerabilidades-Amenazas"
+    order:
+      - file.name
+      - description
+      - related
+      - tags
+    sort:
+      - property: index
+        direction: ASC
+    rowHeight: medium
+    columnSize:
+      note.description: 390
+      note.related: 170
+  - type: cards
+    name: Cards Visuals
+    filters:
+      and:
+        - file.folder == "docs/cybersecurity/fundamentos/1-Riesgos-Vulnerabilidades-Amenazas"
+    order:
+      - file.name
+      - description
+    sort:
+      - property: index
+        direction: ASC
+    cardSize: 230
+    image: note.cover
+    imageAspectRatio: 0.8

@@ -1,0 +1,11 @@
+views:
+  - type: cards
+    name: PEC 2 Visual
+    filters:
+      and:
+        - file.tags.contains("PEC-2")
+    groupBy:
+      property: bloque
+      direction: ASC
+    image: note.cover
+    cardSize: 180

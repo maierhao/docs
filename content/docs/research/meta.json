@@ -1,0 +1,11 @@
+{
+  "title": "Research",
+  "description": "Thesis Investigation",
+  "icon": "Bot",
+  "pages": [
+    "---Introduction---",
+    "---Notes---",
+    "..."
+  ],
+  "root": true
+}

@@ -1,0 +1,54 @@
+---
+title: How to connect an SSH in Mac
+description: Creating an connecting an SSH with Mac
+timestamp: 2025-11-25T01:35:00.000Z
+type:
+  - tutorial
+system: null
+icon: File
+tags:
+  - programming
+---
+The portal to access and write
+data in repositories on Github
+is called SSH (Secure Shell Protocol).
+
+You can start by generating a new SSH
+by using your local machine with:
+
+```shell
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+Follow these steps for the whole info: [Generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key)
+
+Then, our SSH-agent running
+in the background will take care
+of our known SSH keys.
+Add this text to your `.ssh/config` file:
+
+```
+Host github.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
+```
+
+Finally tell the agent to add it
+to our keychain.
+
+For more info, follow: [Adding your SSH key to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)
+
+As a last step,
+add it to your Github profile.
+BAM.
+
+### Possible Improvements
+
+* [ ] Troubleshoot common issues when setting up SSH
+* [ ] How to use multiple SSH Keys
+* [ ] Advance Security Practices with SSH Keys
+
+## Sources
+
+* [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
