@@ -16,7 +16,7 @@ const NAV_LIST = [
   {
     label: "Docs",
     icon: FileText,
-    href: "/docs"
+    href: "/docs/research/quick-start"
   },
   {
     label: "About",
