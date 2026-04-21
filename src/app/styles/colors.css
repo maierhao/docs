@@ -29,13 +29,16 @@ strong {
   color: hsl(0, 0%, 2%);
 }
 
-blockquote {
-  color: hsl(0, 0%, 42%);
+blockquote p {
+  color: var(--color-fd-card-foreground);
+  font-weight: 300;
+  font-size: 1.4em;
+  margin: 2em 0 2em 1em;
 }
 
 .dark {
   --color-fd-background: hsl(0, 0%, 2%);
-  --color-fd-foreground: hsl(0, 0%, 81%);
+  --color-fd-foreground: hsl(0, 0%, 94%);
   --color-fd-muted: hsl(0, 0%, 14%);
   --color-fd-muted-foreground: hsl(0, 0%, 47%);
   --color-fd-popover: hsl(0, 0%, 4%);
