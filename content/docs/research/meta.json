@@ -1,6 +1,11 @@
 {
   "title": "Research",
   "description": "Thesis Investigation",
-  "icon": "Bot",
+  "icon": "Microscope",
+  "pages": [
+    "quick-start",
+    "---Notes---",
+    "..."
+  ],
   "root": true
 }
