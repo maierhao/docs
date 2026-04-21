@@ -2,7 +2,7 @@ import { RootProvider } from 'fumadocs-ui/provider/next';
 import './global.css';
 import './styles/main.scss'
 import { Inter } from 'next/font/google';
-import { dmSans, spaceMono } from './fonts';
+import { dmSans, sourceSerif4, spaceMono } from './fonts';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -10,7 +10,7 @@ const inter = Inter({
 
 export default function Layout({ children }: LayoutProps<'/'>) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${spaceMono.variable} ${inter.className}`} suppressHydrationWarning>
+    <html lang="en" className={`${sourceSerif4.variable} ${spaceMono.variable} ${dmSans.variable} ${inter.className}`} suppressHydrationWarning>
       <body className="flex flex-col min-h-screen">
         <RootProvider>{children}</RootProvider>
       </body>
