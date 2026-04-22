@@ -4,7 +4,14 @@
   "icon": "Microscope",
   "pages": [
     "quick-start",
-    "---Notes---",
+    "---Core---",
+    "controlled-environment-agriculture",
+    "precision-agriculture",
+    "food-security",
+    "resource-constrained-systems",
+    "---Security---",
+    "cybersecurity-in-cea",
+    "attack-surface",
     "..."
   ],
   "root": true
